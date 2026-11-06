@@ -1,32 +1,22 @@
 // --- UI Logic: Initialize Icons & Core Framework ---
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM ready hone ke baad hi icons build honge, isse GitHub/LinkedIn bug permanently solve ho jayega
+    // Create icons after the DOM is ready to prevent GitHub/LinkedIn icon rendering issues.
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
 });
 
-// --- Constants (Data Realignment to Business Analyst / BI Analyst Perspective) ---
+// --- Constants (Software Engineer Profile) ---
 const PROFILE_NAME = "Vashu Tyagi";
-const PROFILE_TITLE = "Business Analyst & BI Specialist";
-const PROFILE_SUMMARY = "Data-driven Business Analyst specializing in translating complex transactional datasets into strategic revenue growth. Expert in funnel optimization, statistical hypothesis testing, and user behavior cohort modeling. I bridge the gap between engineering and business stakeholders by building scalable business intelligence architectures and interactive operational dashboards that directly impact operational efficiency and ROI.";
-const SKILLS = ['Python', 'SQL', 'Power BI', 'Tableau', 'Pandas', 'Process Mapping', 'A/B Testing', 'Git'];
+const PROFILE_TITLE = "Software Engineer";
+const PROFILE_SUMMARY = "Software Engineer focused on designing, building, and improving reliable applications. Experienced in developing clean, maintainable code, solving complex technical problems, and collaborating across the software development lifecycle. Passionate about creating efficient, user-focused solutions and continuously learning modern technologies.";
+const SKILLS = ['JavaScript', 'Python', 'React', 'Node.js', 'HTML', 'CSS', 'SQL', 'Git'];
 
 const PROJECTS = [
     {
-        title: 'E-Commerce Revenue Leakage & Funnel Analysis',
-        technologies: ['MS-SQL', 'Power-BI', 'Process-Mapping'],
-        desc: 'Mapped out checkout transaction flows step-by-step to isolate friction points. Pinpointed severe conversion drop-offs during address verification, formulating data-backed solutions to optimize conversion rates.'
-    },
-    {
-        title: 'OTT Platform Churn & User Cohort Analytics',
-        technologies: ['Python', 'Cohort-Analysis', 'Customer-Lifetime-Value'],
-        desc: 'Segmented user engagement data into temporal cohorts to analyze churn dynamics. Modeled retention behaviors to protect subscription revenue streams and maximize Customer Lifetime Value (CLV).'
-    },
-    {
-        title: 'Food Delivery Service ROI & A/B Validation',
-        technologies: ['SQL-Server', 'Hypothesis-Testing', 'Business-Metrics'],
-        desc: 'Designed statistical hypothesis tests and cost-benefit frameworks to evaluate a new express feature variant. Quantified operational impact and verified revenue growth prior to nationwide deployment.'
+        title: 'RFM',
+        technologies: ['Python', 'SQL', 'Power BI', 'Excel'],
+        desc: 'RFM project focused on building a responsive, efficient, and user-friendly application experience.'
     }
 ];
 
