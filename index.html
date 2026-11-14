@@ -5,28 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vashu Tyagi | Portfolio</title>
+    <title>Vashu Tyagi | Software Engineer (Python &amp; SQL)</title>
     <meta name="description"
-        content="Vashu Tyagi's Portfolio - Software Engineer building reliable, user-focused applications and software solutions.">
+        content="Vashu Tyagi, fresher software engineer. Python, SQL/MySQL, SQLAlchemy, Git. Built a Streamlit and MySQL expense tracker. Open to Python backend roles in Delhi NCR.">
     <meta name="author" content="Vashu Tyagi">
     <meta name="keywords"
-        content="Software Engineer, Software Development, Web Development, Backend Development, Frontend Development, Programming, Application Development">
+        content="Software Engineer, Python Developer, Backend Developer, SQL, MySQL, SQLAlchemy, Git, Linux, Data Pipelines">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    <meta property="og:title" content="Vashu Tyagi | Portfolio">
+
+    <!-- Open Graph / LinkedIn / WhatsApp preview -->
+    <meta property="og:title" content="Vashu Tyagi | Software Engineer (Python &amp; SQL)">
     <meta property="og:description"
-        content="Explore my software engineering projects, applications, and development work.">
+        content="Python and SQL projects: data pipelines, database-backed apps, and analytics. Open to Python backend roles in Delhi NCR.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vashu-tyagii.github.io/Vashu-Tyagi-Portfolio/">
-    <meta property="og:image" content="https://vashu-tyagii.github.io/Vashu-Tyagi-Portfolio/assets/og-image.jpg">
+    <meta property="og:url" content="https://vashu-tyagi-portfolio.netlify.app/">
+    <meta property="og:image" content="https://vashu-tyagi-portfolio.netlify.app/assets/og-image.jpg">
+    <meta property="og:image:alt" content="Vashu Tyagi, Software Engineer (Python and SQL)">
     <meta property="og:site_name" content="Vashu Tyagi - Portfolio">
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vashu Tyagi | Software Engineer (Python &amp; SQL)">
+    <meta name="twitter:description"
+        content="Python and SQL projects: data pipelines, database-backed apps, and analytics.">
+    <meta name="twitter:image" content="https://vashu-tyagi-portfolio.netlify.app/assets/og-image.jpg">
 
     <meta name="theme-color" content="#020617">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="canonical" href="https://vashu-tyagii.github.io/Vashu-Tyagi-Portfolio/">
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="canonical" href="https://vashu-tyagi-portfolio.netlify.app/">
+    <link rel="icon" href="assets/icon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/icon.png">
 
     <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
@@ -73,21 +82,21 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Vashu Tyagi",
-        "jobTitle": "Software Engineer",
-        "url": "https://vashu-tyagii.github.io/Vashu-Tyagi-Portfolio/",
+        "jobTitle": "Software Engineer (Python & SQL)",
+        "url": "https://vashu-tyagi-portfolio.netlify.app/",
         "email": "vashu.tyagi.connect@gmail.com",
         "sameAs": [
             "https://www.linkedin.com/in/vashu-tyagi-engineer/",
             "https://github.com/Vashu-tyagii"
         ],
         "knowsAbout": [
-            "Software Engineering",
-            "Software Development",
-            "Web Development",
-            "Frontend Development",
-            "Backend Development",
-            "Application Development",
-            "Programming"
+            "Python",
+            "SQL",
+            "MySQL",
+            "SQLAlchemy",
+            "Pandas",
+            "Data Pipelines",
+            "Git"
         ]
     }
     </script>
@@ -133,7 +142,8 @@
 
 <body class="bg-slate-900 text-slate-50 selection:bg-cyan-500/30 selection:text-cyan-200">
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-out bg-transparent">
+    <nav id="navbar" aria-label="Main navigation"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-out bg-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
@@ -151,41 +161,47 @@
                 <div class="flex items-center">
                     <div
                         class="flex items-center gap-1 bg-slate-900/90 p-1.5 rounded-2xl border border-slate-800/50 backdrop-blur-xl shadow-xl shadow-black/20 hover:border-slate-700 transition-all duration-300">
-                        <button onclick="scrollToSection('home')"
+                        <button onclick="scrollToSection('home')" aria-label="Home" title="Home"
                             class="nav-btn group relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-slate-400 hover:text-cyan-400 hover:bg-slate-800/80 hover:scale-110"
                             data-target="home">
                             <i data-lucide="terminal" class="w-5 h-5"></i>
                             <span
                                 class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">Home</span>
                         </button>
-                        <button onclick="scrollToSection('about')"
+                        <button onclick="scrollToSection('about')" aria-label="About" title="About"
                             class="nav-btn group relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-slate-400 hover:text-cyan-400 hover:bg-slate-800/80 hover:scale-110"
                             data-target="about">
                             <i data-lucide="user" class="w-5 h-5"></i>
                             <span
                                 class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">About</span>
                         </button>
-                        <button onclick="scrollToSection('experience')"
+                        <button onclick="scrollToSection('experience')" aria-label="Experience" title="Experience"
                             class="nav-btn group relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-slate-400 hover:text-cyan-400 hover:bg-slate-800/80 hover:scale-110"
                             data-target="experience">
                             <i data-lucide="briefcase" class="w-5 h-5"></i>
                             <span
                                 class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">Experience</span>
                         </button>
-                        <button onclick="scrollToSection('projects')"
+                        <button onclick="scrollToSection('projects')" aria-label="Projects" title="Projects"
                             class="nav-btn group relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-slate-400 hover:text-cyan-400 hover:bg-slate-800/80 hover:scale-110"
                             data-target="projects">
                             <i data-lucide="code" class="w-5 h-5"></i>
                             <span
-                                class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">Work</span>
+                                class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">Projects</span>
                         </button>
-                        <button onclick="scrollToSection('contact')"
+                        <button onclick="scrollToSection('contact')" aria-label="Contact" title="Contact"
                             class="nav-btn group relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-slate-400 hover:text-cyan-400 hover:bg-slate-800/80 hover:scale-110"
                             data-target="contact">
                             <i data-lucide="mail" class="w-5 h-5"></i>
                             <span
                                 class="hidden md:block overflow-hidden max-w-0 opacity-0 ml-0 transition-all duration-500 font-medium text-sm whitespace-nowrap group-[.active]:max-w-[100px] group-[.active]:ml-2 group-[.active]:opacity-100">Contact</span>
                         </button>
+                        <!-- Resume shortcut: plain link, not a scroll button (no nav-btn class, so the active-state JS ignores it) -->
+                        <a href="assets/resume/Resume.pdf" target="_blank" rel="noopener" aria-label="Resume (PDF)"
+                            title="Resume (PDF)"
+                            class="relative flex items-center justify-center p-2.5 rounded-xl transition-all duration-500 ease-out text-cyan-400 hover:text-cyan-300 hover:bg-slate-800/80 hover:scale-110">
+                            <i data-lucide="file-text" class="w-5 h-5"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -196,22 +212,21 @@
         <!-- Hero Section -->
         <section id="home"
             class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950 pt-16">
-            <div
+            <div aria-hidden="true"
                 class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob opacity-50">
             </div>
-            <div
+            <div aria-hidden="true"
                 class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob animation-delay-2000 opacity-50">
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-                <div class="mb-6 animate-fade-in opacity-0" style="animation-delay: 0ms"></div>
 
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 animate-fade-in leading-tight opacity-0"
                     style="animation-delay: 100ms">
-                    Building Software <br />
+                    Python &amp; SQL Developer <br />
                     <span
                         class="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
-                        That Makes an Impact
+                        Building Data-Driven Systems
                         <span
                             class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-50 blur-sm rounded-full"></span>
                     </span>
@@ -219,9 +234,10 @@
 
                 <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 animate-fade-in leading-relaxed opacity-0"
                     style="animation-delay: 200ms">
-                    Hi, I'm Vashu Tyagi, a Software Engineer specializing in building scalable applications,
-                    writing clean, maintainable code, and developing reliable software solutions. Turning ideas into
-                    user-focused products through thoughtful engineering and continuous improvement.
+                    Hi, I'm Vashu Tyagi, a fresher software engineer who writes Python and SQL to build database-backed
+                    applications and data pipelines. I built a Streamlit and MySQL expense tracker with SQLAlchemy, and
+                    at Palin Analytics my Python scripts cut manual data preparation time by 40%. MCA student at Amity
+                    University Online, open to Software Engineer and Python Backend roles in Delhi NCR.
                 </p>
 
                 <div class="flex flex-col items-center gap-8 mb-24 animate-fade-in opacity-0"
@@ -273,7 +289,7 @@
                                     class="w-5 h-5 md:w-6 md:h-6 text-cyan-500 group-hover:text-cyan-300 transition-colors duration-300"></i>
                             </div>
                             <span
-                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Full-Stack
+                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Python
                                 Development</span>
                         </div>
                     </div>
@@ -290,8 +306,8 @@
                                     class="w-5 h-5 md:w-6 md:h-6 text-cyan-500 group-hover:text-cyan-300 transition-colors duration-300"></i>
                             </div>
                             <span
-                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Backend
-                                Systems & APIs</span>
+                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">SQL
+                                &amp; Query Optimization</span>
                         </div>
                     </div>
 
@@ -303,12 +319,12 @@
                             class="relative flex flex-col items-center gap-2 md:gap-4 p-3 md:p-6 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-sm transition-all duration-300 group-hover:border-cyan-500/40 group-hover:bg-slate-800/90 group-hover:-translate-y-2 group-hover:shadow-2xl">
                             <div
                                 class="p-2 md:p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:border-cyan-500/30 group-hover:scale-110 transition-all duration-300 shadow-inner">
-                                <i data-lucide="bar-chart-3"
+                                <i data-lucide="workflow"
                                     class="w-5 h-5 md:w-6 md:h-6 text-cyan-500 group-hover:text-cyan-300 transition-colors duration-300"></i>
                             </div>
                             <span
-                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Database
-                                Design & Optimization</span>
+                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Data
+                                Pipelines</span>
                         </div>
                     </div>
 
@@ -320,19 +336,19 @@
                             class="relative flex flex-col items-center gap-2 md:gap-4 p-3 md:p-6 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-sm transition-all duration-300 group-hover:border-cyan-500/40 group-hover:bg-slate-800/90 group-hover:-translate-y-2 group-hover:shadow-2xl">
                             <div
                                 class="p-2 md:p-3 rounded-xl bg-slate-950 border border-slate-800 group-hover:border-cyan-500/30 group-hover:scale-110 transition-all duration-300 shadow-inner">
-                                <i data-lucide="lightbulb"
+                                <i data-lucide="git-branch"
                                     class="w-5 h-5 md:w-6 md:h-6 text-cyan-500 group-hover:text-cyan-300 transition-colors duration-300"></i>
                             </div>
                             <span
-                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Testing
-                                & Deployment</span>
+                                class="text-xs md:text-sm font-semibold text-slate-400 group-hover:text-white transition-colors text-center leading-tight">Git
+                                &amp; Linux</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Scroll Indicator -->
-            <div class="absolute bottom-0 animate-bounce">
+            <div aria-hidden="true" class="absolute bottom-0 animate-bounce">
                 <i data-lucide="arrow-down" class="h-6 w-6 text-slate-600 opacity-75"></i>
             </div>
         </section>
@@ -351,11 +367,11 @@
                     <div class="space-y-12">
                         <div class="fade-section prose prose-invert max-w-none">
                             <p class="text-slate-300 leading-loose text-lg border-l-4 border-cyan-500/50 pl-6">
-                                I am a Software Engineer focused on building robust, scalable products that solve
-                                real user problems. My core expertise lies in full-stack development, API design,
-                                system architecture, and writing clean, maintainable code. I specialize in turning
-                                business requirements into production-ready features, optimizing performance, and
-                                creating seamless digital experiences.
+                                I'm a Python and SQL developer who builds database-backed applications and data
+                                pipelines. My work so far: a Streamlit and MySQL expense tracker built with SQLAlchemy,
+                                plus MySQL query optimization and Python automation at Palin Analytics that cut manual
+                                data preparation by 40% and reporting query runtimes by 30%. I'm completing my MCA
+                                (2026&ndash;2028) and looking for a Software Engineer or Python Backend role.
                             </p>
                         </div>
 
@@ -379,7 +395,7 @@
                                         <p class="text-slate-400 mt-1 text-sm font-medium">Amity University (Online)</p>
                                         <span
                                             class="text-slate-500 text-xs mt-2 inline-block font-mono bg-slate-950 px-2 py-1 rounded border border-slate-800">2026
-                                            - Present</span>
+                                            - 2028 (Expected)</span>
                                     </div>
                                 </div>
                                 <div
@@ -394,7 +410,7 @@
                                         <h4
                                             class="text-white font-bold text-lg leading-tight group-hover:text-cyan-400 transition-colors">
                                             BCA (Bachelor of Computer Applications)</h4>
-                                        <p class="text-slate-400 mt-1 text-sm font-medium">Maa Shakambhari University
+                                        <p class="text-slate-400 mt-1 text-sm font-medium">Maa Shakumbhari University
                                         </p>
                                         <span
                                             class="text-slate-500 text-xs mt-2 inline-block font-mono bg-slate-950 px-2 py-1 rounded border border-slate-800">2023
@@ -415,94 +431,100 @@
                             <h3 class="text-2xl font-bold text-white mb-8 relative z-10">Technical Arsenal</h3>
                             <div class="space-y-8 relative z-10">
 
-                                <div class="group/skill">
-                                    <div class="flex justify-between mb-2">
+                                <!-- Languages -->
+                                <div>
+                                    <p class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-3">Languages
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="text-slate-300 font-medium group-hover/skill:text-white transition-colors">Python
-                                            (Pandas, NumPy, SqlAlchemy)</span>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Python</span>
                                         <span
-                                            class="text-slate-500 font-mono text-sm group-hover/skill:text-cyan-400 transition-colors">Proficient</span>
-                                    </div>
-                                    <div
-                                        class="h-2.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/50">
-                                        <div class="h-full rounded-full bg-slate-400 relative" style="width: 90%">
-                                            <div
-                                                class="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite] skew-x-12 translate-x-[-100%] group-hover/skill:translate-x-[100%] transition-transform duration-1000">
-                                            </div>
-                                        </div>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">SQL</span>
                                     </div>
                                 </div>
 
-                                <div class="group/skill">
-                                    <div class="flex justify-between mb-2">
+                                <!-- Backend & Data -->
+                                <div>
+                                    <p class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-3">Backend
+                                        &amp; Data</p>
+                                    <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="text-slate-300 font-medium group-hover/skill:text-white transition-colors">SQL
-                                            (MYSQL / Complex Queries)</span>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">MySQL</span>
                                         <span
-                                            class="text-slate-500 font-mono text-sm group-hover/skill:text-cyan-400 transition-colors">Proficient</span>
-                                    </div>
-                                    <div
-                                        class="h-2.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/50">
-                                        <div class="h-full rounded-full bg-slate-500 relative" style="width: 85%">
-                                            <div
-                                                class="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite] skew-x-12 translate-x-[-100%] group-hover/skill:translate-x-[100%] transition-transform duration-1000">
-                                            </div>
-                                        </div>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">SQLAlchemy</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Pandas</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">NumPy</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Data
+                                            Pipelines</span>
+                                        <!--
+                                        AFTER THE BACKEND PROJECT IS LIVE (repo + README + deployed link),
+                                        uncomment ONLY the skills you actually used in it:
+
+                                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">FastAPI</span>
+                                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">REST APIs</span>
+                                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">pytest</span>
+                                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Redis</span>
+                                        -->
                                     </div>
                                 </div>
 
-                                <div class="group/skill">
-                                    <div class="flex justify-between mb-2">
+                                <!-- Tools -->
+                                <div>
+                                    <p class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-3">Tools
+                                        &amp; Environments</p>
+                                    <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="text-slate-300 font-medium group-hover/skill:text-white transition-colors">Power
-                                            BI (DAX, Data Modeling)</span>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Git
+                                            &amp; GitHub</span>
                                         <span
-                                            class="text-slate-500 font-mono text-sm group-hover/skill:text-cyan-400 transition-colors">Intermediate</span>
-                                    </div>
-                                    <div
-                                        class="h-2.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/50">
-                                        <div class="h-full rounded-full bg-purple-500 relative" style="width: 80%">
-                                            <div
-                                                class="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite] skew-x-12 translate-x-[-100%] group-hover/skill:translate-x-[100%] transition-transform duration-1000">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="group/skill">
-                                    <div class="flex justify-between mb-2">
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Linux
+                                            (WSL)</span>
                                         <span
-                                            class="text-slate-300 font-medium group-hover/skill:text-white transition-colors">Advanced
-                                            MS Excel (Power Query, Formulas)</span>
-                                        <span
-                                            class="text-slate-500 font-mono text-sm group-hover/skill:text-cyan-400 transition-colors">Intermediate</span>
-                                    </div>
-                                    <div
-                                        class="h-2.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/50">
-                                        <div class="h-full rounded-full bg-emerald-500 relative" style="width: 80%">
-                                            <div
-                                                class="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite] skew-x-12 translate-x-[-100%] group-hover/skill:translate-x-[100%] transition-transform duration-1000">
-                                            </div>
-                                        </div>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Streamlit</span>
+                                        <!--
+                                        AFTER DEPLOYING, uncomment the one you really used (name the actual platform):
+                                        <span class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Render</span>
+                                        -->
                                     </div>
                                 </div>
 
-                                <div class="group/skill">
-                                    <div class="flex justify-between mb-2">
+                                <!-- Fundamentals -->
+                                <div>
+                                    <p class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-3">
+                                        Fundamentals</p>
+                                    <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="text-slate-300 font-medium group-hover/skill:text-white transition-colors">Git
-                                            & GitHub</span>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Data
+                                            Structures &amp; Algorithms</span>
                                         <span
-                                            class="text-slate-500 font-mono text-sm group-hover/skill:text-cyan-400 transition-colors">Intermediate</span>
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-slate-300 text-sm font-medium hover:border-cyan-500/40 hover:text-white transition-colors">Data
+                                            Cleaning &amp; Validation</span>
                                     </div>
-                                    <div
-                                        class="h-2.5 w-full bg-slate-950 rounded-full overflow-hidden border border-slate-800/50">
-                                        <div class="h-full rounded-full bg-orange-500 relative" style="width: 75%">
-                                            <div
-                                                class="absolute inset-0 bg-white/20 animate-[shimmer_2s_infinite] skew-x-12 translate-x-[-100%] group-hover/skill:translate-x-[100%] transition-transform duration-1000">
-                                            </div>
-                                        </div>
+                                </div>
+
+                                <!-- Currently learning (honest label; NOT claimed as skills yet) -->
+                                <div>
+                                    <p class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-3">Currently
+                                        learning</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-dashed border-slate-700 text-slate-400 text-sm font-medium">REST
+                                            APIs</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-dashed border-slate-700 text-slate-400 text-sm font-medium">FastAPI</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-dashed border-slate-700 text-slate-400 text-sm font-medium">Docker</span>
+                                        <span
+                                            class="px-3 py-1.5 rounded-lg bg-slate-950 border border-dashed border-slate-700 text-slate-400 text-sm font-medium">Redis</span>
                                     </div>
+                                    <!--
+                                    AFTER THE BACKEND PROJECT IS LIVE: delete this whole "Currently learning" block
+                                    and uncomment the matching chips in "Backend & Data" / "Tools" above.
+                                    Remove any chip here that you are not actually learning (e.g. Docker).
+                                    -->
                                 </div>
 
                             </div>
